@@ -10,6 +10,9 @@
     "tsx": "^4.23.15",
     "typescript": "^5.7.2"
   },
+  "engines": {
+    "node": "26.x"
+  },
   "homepage": "https://github.com/CharlesFarris/gate-iteration-3#readme",
   "main": "./src/index.ts",
   "name": "gate-iteration-3",
@@ -21,8 +24,8 @@
     "biome:check": "biome check .",
     "biome:ci": "biome ci .",
     "biome:fix": "biome check --write .",
-    "build:force": "tsc -b --force",
     "build": "tsc -b",
+    "build:force": "tsc -b --force",
     "dev": "node ./src/index.ts",
     "test": "node --import tsx --test \"./src/**/*.test.ts\""
   },
