@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "node ./src/index.ts",
-    "test": "node --test"
+    "test": "node --test src/math.test.ts"
   },
   "type": "module",
   "version": "0.1.0"
