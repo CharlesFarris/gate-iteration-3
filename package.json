@@ -1,9 +1,11 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "bugs": {
     "url": "https://github.com/CharlesFarris/gate-iteration-3/issues"
   },
   "description": "",
   "devDependencies": {
+    "@biomejs/biome": "^2.5.12",
     "@types/node": "^22.20.4",
     "typescript": "^5.7.2"
   },
@@ -15,6 +17,9 @@
     "url": "git+https://github.com/CharlesFarris/gate-iteration-3.git"
   },
   "scripts": {
+    "biome:check": "biome check .",
+    "biome:ci": "biome ci .",
+    "biome:fix": "biome check --write .",
     "dev": "node ./src/index.ts",
     "test": "node --test src/math.test.ts"
   },
