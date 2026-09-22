@@ -7,6 +7,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.5.12",
     "@types/node": "^22.20.4",
+    "tsx": "^4.23.15",
     "typescript": "^5.7.2"
   },
   "homepage": "https://github.com/CharlesFarris/gate-iteration-3#readme",
@@ -20,8 +21,10 @@
     "biome:check": "biome check .",
     "biome:ci": "biome ci .",
     "biome:fix": "biome check --write .",
+    "build:force": "tsc -b --force",
+    "build": "tsc -b",
     "dev": "node ./src/index.ts",
-    "test": "node --test src/math.test.ts"
+    "test": "node --import tsx --test \"./src/**/*.test.ts\""
   },
   "type": "module",
   "version": "0.1.0"
